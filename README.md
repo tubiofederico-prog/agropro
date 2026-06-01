@@ -1,36 +1,162 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AgroPro - Plataforma B2B de Gestión Operativa
 
-## Getting Started
+**Plataforma B2B Premium de Gestión Operativa para Distribuidora de Productos Agropecuarios**
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-15.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.0+-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📋 Descripción
+
+**AgroPro** es una plataforma visual B2B ultra premium diseñada para centralizar y optimizar toda la operación de una distribuidora de productos agropecuarios. Digitaliza completamente el flujo desde la recepción de pedidos hasta la facturación final.
+
+---
+
+## ✨ Características Principales
+
+### 🎨 Diseño & UX
+- Interfaz ultra premium con estética SaaS enterprise
+- Diseño responsive (desktop-first, mobile-friendly)
+- Navegación intuitiva con sidebar colapsable
+- Topbar con búsqueda global, notificaciones y usuario
+- Paleta de colores profesional
+
+### 📊 Visualización de Datos
+- Dashboard ejecutivo con KPIs principales
+- Gráficos dinámicos (barras, líneas, donas)
+- Tablas profesionales con filtros y búsqueda
+- Timeline de trazabilidad
+- Mapa visual mock de ubicaciones
+
+### 🔐 Gestión Operativa
+- Control completo del ciclo de pedido
+- Validación inteligente de inventario
+- Asignación de vehículos y conductores
+- Planificación y optimización de rutas
+- Remisiones digitales con firma
+- Gestión de cartera por cobrar
+
+---
+
+## 📦 Módulos (12 Total)
+
+1. **Dashboard** - KPIs, gráficos, alertas
+2. **Gestión de Pedidos** - Crear, editar, seguimiento
+3. **Clientes y Fincas** - Directorio, historial, cartera
+4. **Inventario** - Control de stock, movimientos
+5. **Logística y Despachos** - Alistamientos, despachos
+6. **Gestión de Flota** - Vehículos, conductores
+7. **Planificación de Rutas** - Optimización, mapa
+8. **Remisiones y Entregas** - Entregas digitales, firmas
+9. **Facturación y Cartera** - Facturas, cuentas por cobrar
+10. **Alertas y Notificaciones** - Centro de alertas
+11. **Reportes** - Análisis y exportaciones
+12. **Configuración** - Usuarios, roles, parámetros
+
+---
+
+## 🗂️ Estructura del Proyecto
+
+```
+agropro/
+├── app/                          # Páginas (Next.js App Router)
+│   ├── page.tsx                 # Dashboard
+│   ├── pedidos/                 # Módulo pedidos
+│   ├── clientes/                # Módulo clientes
+│   ├── inventario/              # Módulo inventario
+│   ├── logistica/               # Módulo logística
+│   ├── flota/                   # Módulo flota
+│   ├── rutas/                   # Módulo rutas
+│   ├── remisiones/              # Módulo remisiones
+│   ├── facturacion/             # Módulo facturación
+│   ├── alertas/                 # Módulo alertas
+│   ├── reportes/                # Módulo reportes
+│   └── configuracion/           # Módulo configuración
+├── components/                   # Componentes reutilizables
+│   ├── layout/                  # Sidebar, Topbar, AppShell
+│   ├── ui/                      # Botones, cards, modales
+│   └── charts/                  # Gráficos con Recharts
+└── data/                         # Datos mock centralizados
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Instalación
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Requisitos
+- Node.js 18.17+
+- npm 9+ o yarn 4+
 
-## Learn More
+### Pasos
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clonar
+git clone https://github.com/tubiofederico-prog/agropro.git
+cd agropro
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Instalar
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Ejecutar
+npm run dev
 
-## Deploy on Vercel
+# Abrir en navegador
+http://localhost:3000
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Stack Tecnológico
+
+- **Next.js 15** - Framework React
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Estilos
+- **Recharts** - Gráficos
+- **Lucide React** - Iconos
+
+---
+
+## 📊 Datos Mock Incluidos
+
+- 10 clientes ganaderos
+- 15 productos agropecuarios
+- 8 pedidos en distintos estados
+- 7 vehículos + 5 conductores
+- 7 remisiones
+- 5 facturas
+- 4 rutas activas
+- 11 alertas operativas
+
+---
+
+## 🎨 Flujo de Operación
+
+```
+CLIENTE → PEDIDO → VALIDACIÓN → ALISTAMIENTO → DESPACHO 
+    ↓
+LOGÍSTICA → RUTA → ENTREGA → FIRMA DIGITAL 
+    ↓
+REMISIÓN → FACTURACIÓN → CARTERA
+```
+
+---
+
+## 🔗 Enlaces
+
+- [Next.js Docs](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Recharts](https://recharts.org/)
+
+---
+
+## 👤 Autor
+
+**Federico Tubio**
+- Email: tubiofederico@gmail.com
+- GitHub: [@tubiofederico-prog](https://github.com/tubiofederico-prog)
+
+---
+
+**Hecho con ❤️ para optimizar operaciones agropecuarias**
