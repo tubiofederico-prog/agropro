@@ -49,7 +49,7 @@ export const rutas: Ruta[] = [
         direccion: 'Km 2 vía a Pereira',
         coordenadas: { lat: 4.8133, lng: -75.696 },
         orden: 1,
-        estado: 'en_ruta',
+        estado: 'visitada',
       },
     ],
     cargaTotal: 0.99,
@@ -76,7 +76,7 @@ export const rutas: Ruta[] = [
         direccion: 'Sector Manizales',
         coordenadas: { lat: 5.0667, lng: -75.5 },
         orden: 1,
-        estado: 'en_ruta',
+        estado: 'visitada',
       },
       {
         id: 'PAR003',
